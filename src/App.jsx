@@ -477,7 +477,7 @@ export default function App() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 flex items-center justify-center opacity-40">
         {/* Wave 1 */}
         <div 
-          className="absolute w-[180vw] h-[180vw] rounded-[40%] bg-zinc-800/10 animate-drift"
+          className="absolute w-[180vw] h-[180vw] rounded-[40%] bg-zinc-400/10 animate-drift"
           style={{ top: '50%' }}
         />
         {/* Wave 2 */}
@@ -498,10 +498,10 @@ export default function App() {
             >
               <Icons.Activity />
             </div>
-            <span>Resonance</span>
+            <span>Breathe</span>
           </div>
-          <h1 className="text-3xl font-bold text-white/90">
-            Deep Breath
+          <h1 className="text-2xl font-bold text-white/90">
+            Meditative Deep Breathing
           </h1>
         </header>
 
@@ -540,7 +540,7 @@ export default function App() {
         <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-[32px] space-y-6 relative z-10">
           
           {/* Mode Selector */}
-          <div className="grid grid-cols-3 gap-2 bg-black/20 p-1 rounded-2xl">
+          <div className="grid grid-cols-3 gap-1 bg-black/20 p-1 rounded-2xl">
             {Object.keys(MODES).map((key) => {
               const mode = MODES[key];
               const isSelected = activeModeKey === key;

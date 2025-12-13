@@ -32,7 +32,7 @@ const MODES = {
   RESONANCE: {
     id: 'resonance',
     name: 'Resonance',
-    desc: 'Balance',
+    desc: 'Balance & HRV',
     pattern: [
       { type: 'inhale', scale: 1, label: 'In' }, 
       { type: 'exhale', scale: 1, label: 'Out' }
@@ -49,7 +49,7 @@ const MODES = {
   BOX: {
     id: 'box',
     name: 'Box',
-    desc: 'Focus',
+    desc: 'Focus & Stress Relief',
     pattern: [
       { type: 'inhale', scale: 1, label: 'In' },
       { type: 'hold-in', scale: 1, label: 'Hold' },
@@ -68,7 +68,7 @@ const MODES = {
   RELAX: {
     id: 'relax',
     name: 'Relax',
-    desc: 'Sleep',
+    desc: 'Sleep & Anxiety',
     pattern: [
       { type: 'inhale', scale: 4, label: 'In' },
       { type: 'hold-in', scale: 7, label: 'Hold' },

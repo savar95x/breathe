@@ -68,7 +68,7 @@ const MODES = {
   RELAX: {
     id: 'relax',
     name: 'Relax',
-    desc: 'Sleep & Anxiety',
+    desc: 'Sleep & Anxiety Control',
     pattern: [
       { type: 'inhale', scale: 4, label: 'In' },
       { type: 'hold-in', scale: 7, label: 'Hold' },

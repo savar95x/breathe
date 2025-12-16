@@ -15,15 +15,13 @@ jobs:
         run: |
           npm ci
           npm run build
-          ls -la        # <--- Debugging: Show me all files in root
-          ls -la dist   # <--- Debugging: Show me what is inside dist
         # Ensure this generates a 'dist' or 'build' folder
 
       - name: Deploy to External Repository 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.API_TOKEN_GITHUB }}
-          repository-name: savar/apps  # <--- Your MAIN repo here
+          repository-name: savar95x/react-apps  # <--- Your MAIN repo here
           branch: gh-pages             # <--- The branch serving your apps site
           folder: dist                 # <--- The build folder (Vite=dist, CRA=build)
           target-folder: breathe       # <--- The subfolder URL you want

@@ -1,0 +1,27 @@
+name: Deploy to External Repository
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+        # Ensure this generates a 'dist' or 'build' folder
+
+      - name: Deploy to External Repository 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+          repository-name: savar/apps  # <--- Your MAIN repo here
+          branch: gh-pages             # <--- The branch serving your apps site
+          folder: dist                 # <--- The build folder (Vite=dist, CRA=build)
+          target-folder: breathe       # <--- The subfolder URL you want

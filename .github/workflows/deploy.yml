@@ -15,6 +15,8 @@ jobs:
         run: |
           npm ci
           npm run build
+          ls -la        # <--- Debugging: Show me all files in root
+          ls -la dist   # <--- Debugging: Show me what is inside dist
         # Ensure this generates a 'dist' or 'build' folder
 
       - name: Deploy to External Repository 🚀

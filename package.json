@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://savar95x.github.io/breathe",
+  "homepage": "https://apps.savar.is-a.dev/breathe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
